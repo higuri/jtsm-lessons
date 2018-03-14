@@ -1,0 +1,2 @@
+// function call
+myFunction('Hello');

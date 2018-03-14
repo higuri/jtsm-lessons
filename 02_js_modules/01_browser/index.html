@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>2_1: JS Modules</title></head>
+<body>
+    <!-- Preparation:
+    1. install Node.js
+    2. > npm i -g browserify
+    3. > browserify app.js -o bundle.js
+    -->
+    <!-- Now we don't have to refer to multipls scripts -->
+    <script src="bundle.js"></script>
+
+    <!-- Notice: No unintentional global vars -->
+    <!--
+    <script>
+    alert(secretHeader + ' + ' + secretFooter); 
+    </script>
+    => Uncaught ReferenceError: secretHeader is not defined
+    -->
+</body>
+</html>

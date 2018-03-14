@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><title>1-2: Script Divided</title></head>
+<body>
+    <script src="util.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Notice 1. Refering to a single script don't work -->
+    <!--
+    <script src="app.js"></script>
+    => No alert window shown.
+       *) You can check the error message in
+          the Developer Tools/Console of your browser.
+           => "Uncaught ReferenceError: myFunction is not defined."
+
+    This 'index.html' needs only 'app.js' and
+    has no concern that 'app.js' refers to 'util.js'.
+    So, it is better for 'index.html' to refer only to  'app.js'.
+    -->
+
+    <!-- Notice 2. Changing reference order makes error -->
+    <!--
+    <script src="app.js"></script>
+    <script src="util.js"></script>
+    => No alert window shown.
+       Uncaught ReferenceError: myFunction is not defined.
+    -->
+
+    <!-- Notice 3. Vaiables are referable unintentionally -->
+    <!--
+    <script>
+    alert(secretHeader + ' + ' + secretFooter); 
+    </script>
+    ->>
+
+</body>
+</html>
