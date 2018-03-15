@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>2_1: JS Modules</title></head>
+<body>
+    <!-- Preparation:
+    1. > npm i -g http-server
+    2. > cd {this_directory}
+    3. > http-server .
+    4. Open your browser and type 'localhost:8080'
+       in the address bar.
+    -->
+    <!-- Now we don't have to build a bundle -->
+    <script type="module" src="app.js"></script>
+
+    <!-- Notice:
+    Unless you start http-server, you would recieve a browser error like this:
+    "Access to Script at 'app.js' from origin 'null' has been blocked by CORS policy..."
+    -->
+</body>
+</html>
