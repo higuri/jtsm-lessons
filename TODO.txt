@@ -1,5 +1,0 @@
-[DONE] L1: js (w/o modules) + browser, (nodejs)
-[DONE] L2: js (w/  modules) + browser, nodejs
-L*: js (w/ ES6 modules) + browser, nodejs
-L*: ts (w/ CommonJS modules) + nodejs
-L*: ts (w/ ES6 feature (e.g. Promise) + CommonJS modules) + nodejs
