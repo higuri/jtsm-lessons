@@ -8,6 +8,10 @@
 
 // import function declaration
 // with CommonJS syntax.
+//
+// Notice:
+// * [OK] './util', './util.js'
+// * [NG] 'util', 'util.js' 
 var myFunction = require('./util');
 
 myFunction('Hello');
